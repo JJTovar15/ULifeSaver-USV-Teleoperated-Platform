@@ -1,0 +1,45 @@
+teleop_node:
+  ros__parameters:
+    # ========== Configuración del Joystick ==========
+    trigger_axis: 5      # RT en Xbox controller (acelerador)
+    steer_axis: 0        # Left stick horizontal (dirección)
+    
+    # ========== Deadzone y Escalado ==========
+    deadzone: 0.05       # Zona muerta (0.0 - 1.0) - Ignora movimientos pequeños
+    scale_linear: 2.2    # Factor de escala lineal (0.0 - 1.0) - Reduce sensibilidad
+    scale_angular: 1.0   # Factor de escala angular (0.0 - 1.0)
+    
+    # ========== Límites de Velocidad ==========
+    max_linear_vel: 2.2  # m/s - Velocidad lineal máxima
+    min_linear_vel: 0.0  # m/s - Velocidad lineal mínima (0.0 = sin reversa)
+    max_angular_vel: 1.0 # rad/s - Velocidad angular máxima
+    
+    # ========== Límites de Aceleración ==========
+    # Estos valores controlan qué tan "suave" se mueve el robot
+    max_linear_accel: 0.5   # m/s² - Aceleración lineal (menor = más suave)
+    max_angular_accel: 1.0  # rad/s² - Aceleración angular (menor = más suave)
+    
+    # ========== Configuración de Publicación ==========
+    publish_rate: 50.0      # Hz - Frecuencia de publicación
+    cmd_vel_timeout: 0.5    # segundos - Tiempo sin señal antes de detenerse
+    
+# ========== PERFILES PREDEFINIDOS ==========
+# Descomenta el perfil que quieras usar y comenta el anterior
+
+# PERFIL SUAVE (principiantes, espacios pequeños):
+# scale_linear: 0.4
+# scale_angular: 0.6
+# max_linear_accel: 0.3
+# max_angular_accel: 0.8
+
+# PERFIL NORMAL (uso general):
+# scale_linear: 0.6
+# scale_angular: 1.0
+# max_linear_accel: 0.5
+# max_angular_accel: 1.0
+
+# PERFIL DEPORTIVO (usuarios avanzados, espacios amplios):
+# scale_linear: 1.0
+# scale_angular: 1.0
+# max_linear_accel: 1.5
+# max_angular_accel: 3.0

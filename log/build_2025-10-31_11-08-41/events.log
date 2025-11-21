@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.001153] (hyper_teleop) JobQueued: {'identifier': 'hyper_teleop', 'dependencies': OrderedDict()}
+[0.001328] (hyper_teleop) JobStarted: {'identifier': 'hyper_teleop'}
+[0.099498] (-) TimerEvent: {}
+[0.200163] (-) TimerEvent: {}
+[0.300879] (-) TimerEvent: {}
+[0.401287] (-) TimerEvent: {}
+[0.501750] (-) TimerEvent: {}
+[0.603007] (-) TimerEvent: {}
+[0.779611] (-) TimerEvent: {}
+[0.900058] (-) TimerEvent: {}
+[1.000531] (-) TimerEvent: {}
+[1.101321] (-) TimerEvent: {}
+[1.202325] (-) TimerEvent: {}
+[1.204340] (hyper_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/hyper_teleop', 'build', '--build-base', '/home/everd/hyper_teleop_ws/build/hyper_teleop/build', 'install', '--record', '/home/everd/hyper_teleop_ws/build/hyper_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/everd/hyper_teleop_ws/src/hyper_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'everd', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/everd', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'SYSTEMD_EXEC_PID': '4739', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/everd/hyper_teleop_ws/install:/home/everd/teleop_ws/install:/home/everd/new/install:/home/everd/lab_ws/install:/home/everd/universidad/robotica/turtle_ws/install:/home/everd/ros2_ws/install:/home/everd/universidad/git/Robotica-UAO-2025-3/centauro_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'everd', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'everd', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/everd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Ever-VirtualBox:@/tmp/.ICE-unix/1819,unix/Ever-VirtualBox:/tmp/.ICE-unix/1819', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/54106849_bbe2_4c0e_a773_3ef28eab0dbc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.X3VMF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.98', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/everd/hyper_teleop_ws/install/hyper_teleop:/home/everd/universidad/git/Robotica-UAO-2025-3/centauro_ws/install/robot:/home/everd/teleop_ws/install/lab_teleop_diff:/home/everd/new/install/mi_br:/home/everd/lab_ws/install/el_arduino:/home/everd/lab_ws/install/arduinobot_description:/home/everd/universidad/robotica/turtle_ws/install/learning_tf2:/home/everd/ros2_ws/install/py_srvcli:/home/everd/ros2_ws/install/py_pubsub:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/everd/hyper_teleop_ws/build/hyper_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/everd/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:/home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:/home/everd/universidad/git/Robotica-UAO-2025-3/centauro_ws/install/robot/lib/python3.10/site-packages:/home/everd/teleop_ws/install/lab_teleop_diff/lib/python3.10/site-packages:/home/everd/new/install/mi_br/lib/python3.10/site-packages:/home/everd/lab_ws/install/el_arduino/lib/python3.10/site-packages:/home/everd/universidad/robotica/turtle_ws/install/learning_tf2/lib/python3.10/site-packages:/home/everd/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/home/everd/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/everd/lab_ws/install/arduinobot_description'}, 'shell': False}
+[1.302582] (-) TimerEvent: {}
+[1.403295] (-) TimerEvent: {}
+[1.533294] (-) TimerEvent: {}
+[1.641145] (-) TimerEvent: {}
+[1.678372] (hyper_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[1.679432] (hyper_teleop) StdoutLine: {'line': b'creating ../../build/hyper_teleop/hyper_teleop.egg-info\n'}
+[1.680061] (hyper_teleop) StdoutLine: {'line': b'writing ../../build/hyper_teleop/hyper_teleop.egg-info/PKG-INFO\n'}
+[1.680345] (hyper_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/hyper_teleop/hyper_teleop.egg-info/dependency_links.txt\n'}
+[1.680595] (hyper_teleop) StdoutLine: {'line': b'writing entry points to ../../build/hyper_teleop/hyper_teleop.egg-info/entry_points.txt\n'}
+[1.681017] (hyper_teleop) StdoutLine: {'line': b'writing requirements to ../../build/hyper_teleop/hyper_teleop.egg-info/requires.txt\n'}
+[1.681234] (hyper_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/hyper_teleop/hyper_teleop.egg-info/top_level.txt\n'}
+[1.681520] (hyper_teleop) StdoutLine: {'line': b"writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'\n"}
+[1.684389] (hyper_teleop) StdoutLine: {'line': b"reading manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'\n"}
+[1.686068] (hyper_teleop) StdoutLine: {'line': b"writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'\n"}
+[1.686421] (hyper_teleop) StdoutLine: {'line': b'running build\n'}
+[1.686569] (hyper_teleop) StdoutLine: {'line': b'running build_py\n'}
+[1.686934] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build\n'}
+[1.687166] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib\n'}
+[1.687555] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[1.687932] (hyper_teleop) StdoutLine: {'line': b'copying hyper_teleop/teleop_node_limited.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[1.688137] (hyper_teleop) StdoutLine: {'line': b'copying hyper_teleop/__init__.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[1.688423] (hyper_teleop) StdoutLine: {'line': b'copying hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[1.688752] (hyper_teleop) StdoutLine: {'line': b'copying hyper_teleop/bridge_sus.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[1.688907] (hyper_teleop) StdoutLine: {'line': b'running install\n'}
+[1.689288] (hyper_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[1.690329] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[1.690587] (hyper_teleop) StdoutLine: {'line': b'copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_node_limited.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[1.690856] (hyper_teleop) StdoutLine: {'line': b'copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/__init__.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[1.691269] (hyper_teleop) StdoutLine: {'line': b'copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[1.691465] (hyper_teleop) StdoutLine: {'line': b'copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/bridge_sus.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[1.692464] (hyper_teleop) StdoutLine: {'line': b'byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_node_limited.py to teleop_node_limited.cpython-310.pyc\n'}
+[1.694368] (hyper_teleop) StdoutLine: {'line': b'byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/__init__.py to __init__.cpython-310.pyc\n'}
+[1.694759] (hyper_teleop) StdoutLine: {'line': b'byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_chimbo.py to teleop_chimbo.cpython-310.pyc\n'}
+[1.696353] (hyper_teleop) StdoutLine: {'line': b'byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/bridge_sus.py to bridge_sus.cpython-310.pyc\n'}
+[1.697747] (hyper_teleop) StdoutLine: {'line': b'running install_data\n'}
+[1.698115] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index\n'}
+[1.698432] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index\n'}
+[1.698584] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index/packages\n'}
+[1.698819] (hyper_teleop) StdoutLine: {'line': b'copying resource/hyper_teleop -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index/packages\n'}
+[1.699024] (hyper_teleop) StdoutLine: {'line': b'copying package.xml -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop\n'}
+[1.699209] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/launch\n'}
+[1.699527] (hyper_teleop) StdoutLine: {'line': b'copying launch/hyper.launch.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/launch\n'}
+[1.699806] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/config\n'}
+[1.699982] (hyper_teleop) StdoutLine: {'line': b'copying config/teleop_params.yaml -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/config\n'}
+[1.714311] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/urdf\n'}
+[1.714777] (hyper_teleop) StdoutLine: {'line': b'copying urdf/salvavidas.urdf -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/urdf\n'}
+[1.714954] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/worlds\n'}
+[1.715155] (hyper_teleop) StdoutLine: {'line': b'copying worlds/flat_world.sdf -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/worlds\n'}
+[1.715524] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/rviz\n'}
+[1.715677] (hyper_teleop) StdoutLine: {'line': b'copying rviz/teleop_rviz.rviz -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/rviz\n'}
+[1.716340] (hyper_teleop) StdoutLine: {'line': b'creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes\n'}
+[1.716622] (hyper_teleop) StdoutLine: {'line': b'copying meshes/right.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes\n'}
+[1.717167] (hyper_teleop) StdoutLine: {'line': b'copying meshes/base_link.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes\n'}
+[1.720772] (hyper_teleop) StdoutLine: {'line': b'copying meshes/left.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes\n'}
+[1.721285] (hyper_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.724608] (hyper_teleop) StdoutLine: {'line': b'Copying ../../build/hyper_teleop/hyper_teleop.egg-info to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info\n'}
+[1.725930] (hyper_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[1.760634] (hyper_teleop) StdoutLine: {'line': b'Installing bridge_sus script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop\n'}
+[1.761113] (-) TimerEvent: {}
+[1.761346] (hyper_teleop) StdoutLine: {'line': b'Installing teleop_chimbo script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop\n'}
+[1.761734] (hyper_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/everd/hyper_teleop_ws/build/hyper_teleop/install.log'\n"}
+[1.798975] (hyper_teleop) CommandEnded: {'returncode': 0}
+[1.819301] (hyper_teleop) JobEnded: {'identifier': 'hyper_teleop', 'rc': 0}
+[1.820406] (-) EventReactorShutdown: {}

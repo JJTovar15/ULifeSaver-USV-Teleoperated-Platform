@@ -1,0 +1,56 @@
+running egg_info
+creating ../../build/hyper_teleop/hyper_teleop.egg-info
+writing ../../build/hyper_teleop/hyper_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../build/hyper_teleop/hyper_teleop.egg-info/dependency_links.txt
+writing entry points to ../../build/hyper_teleop/hyper_teleop.egg-info/entry_points.txt
+writing requirements to ../../build/hyper_teleop/hyper_teleop.egg-info/requires.txt
+writing top-level names to ../../build/hyper_teleop/hyper_teleop.egg-info/top_level.txt
+writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+reading manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build
+creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib
+creating /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+copying hyper_teleop/teleop_node_limited.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+copying hyper_teleop/__init__.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+copying hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+copying hyper_teleop/bridge_sus.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+running install
+running install_lib
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_node_limited.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/__init__.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/bridge_sus.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_node_limited.py to teleop_node_limited.cpython-310.pyc
+byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_chimbo.py to teleop_chimbo.cpython-310.pyc
+byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/bridge_sus.py to bridge_sus.cpython-310.pyc
+running install_data
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index/packages
+copying resource/hyper_teleop -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/launch
+copying launch/hyper.launch.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/launch
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/config
+copying config/teleop_params.yaml -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/config
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/urdf
+copying urdf/salvavidas.urdf -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/urdf
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/worlds
+copying worlds/flat_world.sdf -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/worlds
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/rviz
+copying rviz/teleop_rviz.rviz -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/rviz
+creating /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes
+copying meshes/right.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes
+copying meshes/base_link.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes
+copying meshes/left.STL -> /home/everd/hyper_teleop_ws/install/hyper_teleop/share/hyper_teleop/meshes
+running install_egg_info
+Copying ../../build/hyper_teleop/hyper_teleop.egg-info to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info
+running install_scripts
+Installing bridge_sus script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+Installing teleop_chimbo script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+writing list of installed files to '/home/everd/hyper_teleop_ws/build/hyper_teleop/install.log'

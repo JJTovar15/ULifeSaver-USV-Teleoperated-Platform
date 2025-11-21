@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.000416] (hyper_teleop) JobQueued: {'identifier': 'hyper_teleop', 'dependencies': OrderedDict()}
+[0.000569] (hyper_teleop) JobStarted: {'identifier': 'hyper_teleop'}
+[0.097652] (-) TimerEvent: {}
+[0.198710] (-) TimerEvent: {}
+[0.301027] (-) TimerEvent: {}
+[0.402414] (-) TimerEvent: {}
+[0.503697] (-) TimerEvent: {}
+[0.604432] (-) TimerEvent: {}
+[0.705234] (-) TimerEvent: {}
+[0.806428] (-) TimerEvent: {}
+[0.907378] (-) TimerEvent: {}
+[1.007977] (-) TimerEvent: {}
+[1.108855] (-) TimerEvent: {}
+[1.209374] (-) TimerEvent: {}
+[1.310070] (-) TimerEvent: {}
+[1.410600] (-) TimerEvent: {}
+[1.511004] (-) TimerEvent: {}
+[1.611605] (-) TimerEvent: {}
+[1.712243] (-) TimerEvent: {}
+[1.813489] (hyper_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/hyper_teleop', 'build', '--build-base', '/home/tombe/hyper_teleop_ws/build/hyper_teleop/build', 'install', '--record', '/home/tombe/hyper_teleop_ws/build/hyper_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/tombe/hyper_teleop_ws/src/hyper_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/usr/share/gz/gazebo-6/models:/home/tombe/.gazebo/models', 'USER': 'tombe', 'LC_TIME': 'es_CO.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/tombe/ros2_ws/install/turtlesim/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tombe', 'OLDPWD': '/home/tombe/Downloads', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_CO.UTF-8', 'SYSTEMD_EXEC_PID': '2440', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/tombe/hyper_teleop_ws/install:/home/tombe/ros2_ws/install:/home/tombe/Robotica/Robotica-UAO-2025-3/centauro_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'tombe', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tombe', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/opt/ros/humble/share:/opt/ros/humble/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/tombe/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tombe-Standard-PC-Q35-ICH9-2009:@/tmp/.ICE-unix/1053,unix/tombe-Standard-PC-Q35-ICH9-2009:/tmp/.ICE-unix/1053', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_CO.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0e36f6a7_9bf4_49b9_9a03_8f1218c9d6d9', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_CO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.82', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/tombe/hyper_teleop_ws/install/hyper_teleop:/home/tombe/Robotica/Robotica-UAO-2025-3/centauro_ws/install/robot:/home/tombe/ros2_ws/install/urdf_tutorial:/home/tombe/ros2_ws/install/turtlesim:/home/tombe/ros2_ws/install/robot1_gazebo:/home/tombe/ros2_ws/install/my_rviz_satellite_test:/home/tombe/ros2_ws/install/microusv_description:/home/tombe/ros2_ws/install/microusv:/home/tombe/ros2_ws/install/lab_teleop_diff:/home/tombe/ros2_ws/install/lab2:/home/tombe/ros2_ws/install/basic_mobile_robot:/home/tombe/ros2_ws/install/arduinobot_description:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_CO.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_CO.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_CO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/tombe/hyper_teleop_ws/build/hyper_teleop', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tombe/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:/home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:/home/tombe/Robotica/Robotica-UAO-2025-3/centauro_ws/install/robot/lib/python3.10/site-packages:/home/tombe/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages:/home/tombe/ros2_ws/install/robot1_gazebo/lib/python3.10/site-packages:/home/tombe/ros2_ws/install/my_rviz_satellite_test/lib/python3.10/site-packages:/home/tombe/ros2_ws/install/microusv/lib/python3.10/site-packages:/home/tombe/ros2_ws/install/lab_teleop_diff/lib/python3.10/site-packages:/home/tombe/ros2_ws/install/lab2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_CO.UTF-8', 'LC_PAPER': 'es_CO.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/tombe/ros2_ws/install/urdf_tutorial:/home/tombe/ros2_ws/install/turtlesim:/home/tombe/ros2_ws/install/microusv_description:/home/tombe/ros2_ws/install/basic_mobile_robot:/home/tombe/ros2_ws/install/arduinobot_description'}, 'shell': False}
+[1.819835] (-) TimerEvent: {}
+[1.921194] (-) TimerEvent: {}
+[2.021853] (-) TimerEvent: {}
+[2.122432] (-) TimerEvent: {}
+[2.223100] (-) TimerEvent: {}
+[2.312999] (hyper_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[2.313791] (hyper_teleop) StdoutLine: {'line': b'writing ../../build/hyper_teleop/hyper_teleop.egg-info/PKG-INFO\n'}
+[2.313957] (hyper_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/hyper_teleop/hyper_teleop.egg-info/dependency_links.txt\n'}
+[2.314198] (hyper_teleop) StdoutLine: {'line': b'writing entry points to ../../build/hyper_teleop/hyper_teleop.egg-info/entry_points.txt\n'}
+[2.314695] (hyper_teleop) StdoutLine: {'line': b'writing requirements to ../../build/hyper_teleop/hyper_teleop.egg-info/requires.txt\n'}
+[2.315119] (hyper_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/hyper_teleop/hyper_teleop.egg-info/top_level.txt\n'}
+[2.322026] (hyper_teleop) StdoutLine: {'line': b"reading manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'\n"}
+[2.323312] (-) TimerEvent: {}
+[2.326054] (hyper_teleop) StdoutLine: {'line': b"writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'\n"}
+[2.326493] (hyper_teleop) StdoutLine: {'line': b'running build\n'}
+[2.326698] (hyper_teleop) StdoutLine: {'line': b'running build_py\n'}
+[2.327146] (hyper_teleop) StdoutLine: {'line': b'copying hyper_teleop/bridge_sus.py -> /home/tombe/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop\n'}
+[2.328597] (hyper_teleop) StdoutLine: {'line': b'running install\n'}
+[2.329636] (hyper_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[2.332270] (hyper_teleop) StdoutLine: {'line': b'copying /home/tombe/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/bridge_sus.py -> /home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop\n'}
+[2.333911] (hyper_teleop) StdoutLine: {'line': b'byte-compiling /home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/bridge_sus.py to bridge_sus.cpython-310.pyc\n'}
+[2.339299] (hyper_teleop) StdoutLine: {'line': b'running install_data\n'}
+[2.340273] (hyper_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.344010] (hyper_teleop) StdoutLine: {'line': b"removing '/home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info' (and everything under it)\n"}
+[2.346187] (hyper_teleop) StdoutLine: {'line': b'Copying ../../build/hyper_teleop/hyper_teleop.egg-info to /home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info\n'}
+[2.348918] (hyper_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[2.399219] (hyper_teleop) StdoutLine: {'line': b'Installing bridge_sus script to /home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop\n'}
+[2.399931] (hyper_teleop) StdoutLine: {'line': b'Installing teleop_chimbo script to /home/tombe/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop\n'}
+[2.400818] (hyper_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/tombe/hyper_teleop_ws/build/hyper_teleop/install.log'\n"}
+[2.423554] (-) TimerEvent: {}
+[2.443734] (hyper_teleop) CommandEnded: {'returncode': 0}
+[2.476308] (hyper_teleop) JobEnded: {'identifier': 'hyper_teleop', 'rc': 0}
+[2.478023] (-) EventReactorShutdown: {}

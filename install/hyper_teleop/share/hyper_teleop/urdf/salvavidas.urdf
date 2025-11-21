@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="salvavidas">
+
+  <!-- ===== Root sin inercia (silencia KDL) ===== -->
+  <link name="base_footprint"/>
+  <joint name="base_footprint_to_base_link" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <!-- ===================== BASE LINK ===================== -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.106258061307324 0.00000371036183159645 -0.0466890838025706" rpy="0 0 0"/>
+      <mass value="3.08247750849359"/>
+      <inertia ixx="0.0175508684929873" ixy="-0.000000330546111050191" ixz="0.000135278850421253"
+               iyy="0.0135585176715858" iyz="-0.000000721045529733759" izz="0.0258145316640443"/>
+    </inertial>
+
+    <!-- VISUAL -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hyper_teleop/meshes/base_link.STL"/>
+      </geometry>
+      <material name="blue"><color rgba="0.1 0.4 0.9 1"/></material>
+    </visual>
+
+    <!-- COLLISION: levanta un poco la “panza” para que NO arrastre -->
+    <!-- Reduce altura y súbela 1 cm para asegurar que SOLO las ruedas tocan -->
+    <collision>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.50 0.50 0.12"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ===================== LEFT TURBINE (rueda) ===================== -->
+  <link name="left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.0529571018322495"/>
+      <inertia ixx="1.52970588241584e-05" ixy="0" ixz="0"
+               iyy="1.52970588241584e-05" iyz="0" izz="1.1704627253208e-05"/>
+    </inertial>
+
+    <!-- VISUAL (mesh) -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hyper_teleop/meshes/left.STL"/>
+      </geometry>
+      <material name="black"><color rgba="0.1 0.1 0.1 1"/></material>
+    </visual>
+
+    <!-- COLLISION: cilindro con eje +Y (rotar 90° en X) -->
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079632679 0 0"/>
+      <geometry>
+        <!-- Aumenta el radio a 0.08 para contacto más claro -->
+        <cylinder radius="0.08" length="0.20"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_turbine" type="continuous">
+    <origin xyz="-0.228  0.1025 -0.04708" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="left"/>
+    <!-- Eje de giro en +Y -->
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ===================== RIGHT TURBINE (rueda) ===================== -->
+  <link name="right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.0529571018322495"/>
+      <inertia ixx="1.52970588241584e-05" ixy="0" ixz="0"
+               iyy="1.52970588241583e-05" iyz="0" izz="1.1704627253208e-05"/>
+    </inertial>
+
+    <!-- VISUAL -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://hyper_teleop/meshes/right.STL"/>
+      </geometry>
+      <material name="black"><color rgba="1.0 0.5 0.0 1.0"/></material>
+    </visual>
+
+    <!-- COLLISION: cilindro con eje +Y (rotar 90° en X) -->
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079632679 0 0"/>
+      <geometry>
+        <cylinder radius="0.08" length="0.20"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_turbine" type="continuous">
+    <origin xyz="-0.228 -0.1025 -0.04708" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="right"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- ===================== GAZEBO (GZ) ===================== -->
+  <gazebo>
+    <!-- DiffDrive moderno -->
+    <plugin filename="libgz-sim-diff-drive-system.so" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_turbine</left_joint>
+      <right_joint>right_turbine</right_joint>
+      <wheel_separation>0.21</wheel_separation>
+      <wheel_radius>0.08</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <!-- >>> child en base_footprint para que tus viewers no pidan base_footprin(t) -->
+      <child_frame_id>base_footprint</child_frame_id>
+      <max_linear_velocity>2.2</max_linear_velocity>
+      <max_angular_velocity>1.5</max_angular_velocity>
+    </plugin>
+
+    <!-- Pose Publisher -->
+    <plugin filename="libgz-sim-pose-publisher-system.so" name="gz::sim::systems::PosePublisher">
+      <publish_link_pose>true</publish_link_pose>
+      <publish_collision_pose>false</publish_collision_pose>
+      <publish_visual_pose>false</publish_visual_pose>
+      <publish_nested_model_pose>false</publish_nested_model_pose>
+    </plugin>
+
+    <!-- Joint State Publisher -->
+    <plugin filename="libgz-sim-joint-state-publisher-system.so" name="gz::sim::systems::JointStatePublisher">
+      <topic>/joint_states</topic>
+      <joint_name>left_turbine</joint_name>
+      <joint_name>right_turbine</joint_name>
+    </plugin>
+
+    <!-- Wheel Slip: permite rotar sobre el eje (anisotropía) -->
+    <plugin filename="libgz-sim-wheel-slip-system.so" name="gz::sim::systems::WheelSlip">
+      <!-- Lateral: un poco de deslizamiento para girar; Longitudinal: más agarre -->
+      <wheel link_name="left">
+        <slip_compliance_lateral>0.05</slip_compliance_lateral>
+        <slip_compliance_longitudinal>0.002</slip_compliance_longitudinal>
+      </wheel>
+      <wheel link_name="right">
+        <slip_compliance_lateral>0.05</slip_compliance_lateral>
+        <slip_compliance_longitudinal>0.002</slip_compliance_longitudinal>
+      </wheel>
+    </plugin>
+  </gazebo>
+
+  <!-- ===== Materiales y fricción ===== -->
+  <!-- Baja fricción del cuerpo para que no “ancle” la rotación -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
+  </gazebo>
+
+  <!-- Ruedas con buena fricción longitudinal -->
+  <gazebo reference="left">
+    <material>Gazebo/Black</material>
+    <mu1>1.2</mu1>
+    <mu2>1.2</mu2>
+  </gazebo>
+  <gazebo reference="right">
+    <material>Gazebo/Black</material>
+    <mu1>1.2</mu1>
+    <mu2>1.2</mu2>
+  </gazebo>
+
+</robot>

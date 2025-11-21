@@ -1,0 +1,25 @@
+[1.077s] Invoking command in '/home/everd/hyper_teleop_ws/src/hyper_teleop': PYTHONPATH=/home/everd/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hyper_teleop build --build-base /home/everd/hyper_teleop_ws/build/hyper_teleop/build install --record /home/everd/hyper_teleop_ws/build/hyper_teleop/install.log --single-version-externally-managed install_data
+[1.465s] running egg_info
+[1.465s] writing ../../build/hyper_teleop/hyper_teleop.egg-info/PKG-INFO
+[1.465s] writing dependency_links to ../../build/hyper_teleop/hyper_teleop.egg-info/dependency_links.txt
+[1.465s] writing entry points to ../../build/hyper_teleop/hyper_teleop.egg-info/entry_points.txt
+[1.466s] writing requirements to ../../build/hyper_teleop/hyper_teleop.egg-info/requires.txt
+[1.466s] writing top-level names to ../../build/hyper_teleop/hyper_teleop.egg-info/top_level.txt
+[1.468s] reading manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+[1.470s] writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+[1.470s] running build
+[1.471s] running build_py
+[1.471s] copying hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+[1.471s] running install
+[1.472s] running install_lib
+[1.473s] copying /home/everd/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_chimbo.py -> /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+[1.474s] byte-compiling /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_chimbo.py to teleop_chimbo.cpython-310.pyc
+[1.476s] running install_data
+[1.476s] running install_egg_info
+[1.479s] removing '/home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info' (and everything under it)
+[1.480s] Copying ../../build/hyper_teleop/hyper_teleop.egg-info to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info
+[1.481s] running install_scripts
+[1.511s] Installing bridge_sus script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+[1.512s] Installing teleop_chimbo script to /home/everd/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+[1.512s] writing list of installed files to '/home/everd/hyper_teleop_ws/build/hyper_teleop/install.log'
+[1.547s] Invoked command in '/home/everd/hyper_teleop_ws/src/hyper_teleop' returned '0': PYTHONPATH=/home/everd/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/everd/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hyper_teleop build --build-base /home/everd/hyper_teleop_ws/build/hyper_teleop/build install --record /home/everd/hyper_teleop_ws/build/hyper_teleop/install.log --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+[0.409s] Invoking command in '/home/tombe/Downloads/hyper_teleop_ws/src/hyper_teleop': PYTHONPATH=/home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hyper_teleop build --build-base /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/build install --record /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/install.log --single-version-externally-managed install_data
+[0.556s] running egg_info
+[0.556s] writing ../../build/hyper_teleop/hyper_teleop.egg-info/PKG-INFO
+[0.556s] writing dependency_links to ../../build/hyper_teleop/hyper_teleop.egg-info/dependency_links.txt
+[0.556s] writing entry points to ../../build/hyper_teleop/hyper_teleop.egg-info/entry_points.txt
+[0.557s] writing requirements to ../../build/hyper_teleop/hyper_teleop.egg-info/requires.txt
+[0.557s] writing top-level names to ../../build/hyper_teleop/hyper_teleop.egg-info/top_level.txt
+[0.558s] reading manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+[0.558s] writing manifest file '../../build/hyper_teleop/hyper_teleop.egg-info/SOURCES.txt'
+[0.558s] running build
+[0.558s] running build_py
+[0.558s] copying hyper_teleop/teleop_chimbo.py -> /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop
+[0.560s] running install
+[0.560s] running install_lib
+[0.560s] copying /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/build/lib/hyper_teleop/teleop_chimbo.py -> /home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop
+[0.560s] byte-compiling /home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop/teleop_chimbo.py to teleop_chimbo.cpython-310.pyc
+[0.562s] running install_data
+[0.562s] running install_egg_info
+[0.563s] removing '/home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info' (and everything under it)
+[0.563s] Copying ../../build/hyper_teleop/hyper_teleop.egg-info to /home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages/hyper_teleop-0.0.1-py3.10.egg-info
+[0.565s] running install_scripts
+[0.575s] Installing bridge_sus script to /home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+[0.575s] Installing teleop_chimbo script to /home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/hyper_teleop
+[0.575s] writing list of installed files to '/home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/install.log'
+[0.591s] Invoked command in '/home/tombe/Downloads/hyper_teleop_ws/src/hyper_teleop' returned '0': PYTHONPATH=/home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tombe/Downloads/hyper_teleop_ws/install/hyper_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hyper_teleop build --build-base /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/build install --record /home/tombe/Downloads/hyper_teleop_ws/build/hyper_teleop/install.log --single-version-externally-managed install_data

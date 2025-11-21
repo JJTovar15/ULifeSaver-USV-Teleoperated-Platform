@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="piscina_world">
+
+    <!-- Physics (1 ms) -->
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- Plugins base -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+
+    <!-- Luz -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Piso 1: TRANSPARENTE con colisión -->
+    <model name="piso_transparente">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+          <transparency>0.7</transparency>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Piso 2: capa visual “agua” 20x20 (sin colisión) -->
+    <model name="piso_color">
+      <static>true</static>
+      <pose>0 0 0.03 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>20 20 0.04</size></box>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.9 1</ambient>
+            <diffuse>0.1 0.5 1.0 1</diffuse>
+            <specular>0.05 0.05 0.1 1</specular>
+            <emissive>0.0 0.0 0.05 1</emissive>
+          </material>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+    </model>
+
+    <!-- LIMITES: cuatro muros alrededor del área 20x20 -->
+    <!-- Ajustes rápidos -->
+    <!-- WALL_T: grosor; WALL_H: altura; AREA: semilado (10 => 20x20) -->
+    <model name="limites_mundo">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+
+      <!-- Parámetros manuales -->
+      <!-- No existe macro en SDF puro; se documentan para referencia:
+           WALL_T = 0.2, WALL_H = 2.0, AREA = 10.0 -->
+
+      <!-- Norte (y = +AREA) -->
+      <link name="wall_norte">
+        <pose>0 10 1.0 0 0 0</pose> <!-- z = WALL_H/2 -->
+        <collision name="col">
+          <geometry>
+            <box><size>20 0.2 2.0</size></box> <!-- 20 x WALL_T x WALL_H -->
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>0xFF</collide_bitmask>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>1e6</threshold>
+            </bounce>
+          </surface>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box><size>20 0.2 2.0</size></box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.6 1.0 1</ambient>
+            <diffuse>0.2 0.6 1.0 1</diffuse>
+          </material>
+          <transparency>0.9</transparency> <!-- casi invisible -->
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+
+      <!-- Sur (y = -AREA) -->
+      <link name="wall_sur">
+        <pose>0 -10 1.0 0 0 0</pose>
+        <collision name="col">
+          <geometry>
+            <box><size>20 0.2 2.0</size></box>
+          </geometry>
+          <surface>
+            <contact><collide_bitmask>0xFF</collide_bitmask></contact>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+            <bounce><restitution_coefficient>0.0</restitution_coefficient><threshold>1e6</threshold></bounce>
+          </surface>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box><size>20 0.2 2.0</size></box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.6 1.0 1</ambient>
+            <diffuse>0.2 0.6 1.0 1</diffuse>
+          </material>
+          <transparency>0.9</transparency>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+
+      <!-- Este (x = +AREA) -->
+      <link name="wall_este">
+        <pose>10 0 1.0 0 0 0</pose>
+        <collision name="col">
+          <geometry>
+            <box><size>0.2 20 2.0</size></box> <!-- WALL_T x 20 x WALL_H -->
+          </geometry>
+          <surface>
+            <contact><collide_bitmask>0xFF</collide_bitmask></contact>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+            <bounce><restitution_coefficient>0.0</restitution_coefficient><threshold>1e6</threshold></bounce>
+          </surface>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box><size>0.2 20 2.0</size></box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.6 1.0 1</ambient>
+            <diffuse>0.2 0.6 1.0 1</diffuse>
+          </material>
+          <transparency>0.9</transparency>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+
+      <!-- Oeste (x = -AREA) -->
+      <link name="wall_oeste">
+        <pose>-10 0 1.0 0 0 0</pose>
+        <collision name="col">
+          <geometry>
+            <box><size>0.2 20 2.0</size></box>
+          </geometry>
+          <surface>
+            <contact><collide_bitmask>0xFF</collide_bitmask></contact>
+            <friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction>
+            <bounce><restitution_coefficient>0.0</restitution_coefficient><threshold>1e6</threshold></bounce>
+          </surface>
+        </collision>
+        <visual name="vis">
+          <geometry>
+            <box><size>0.2 20 2.0</size></box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.6 1.0 1</ambient>
+            <diffuse>0.2 0.6 1.0 1</diffuse>
+          </material>
+          <transparency>0.9</transparency>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>

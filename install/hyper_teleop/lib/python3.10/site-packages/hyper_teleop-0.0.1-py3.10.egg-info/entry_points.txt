@@ -1,0 +1,4 @@
+[console_scripts]
+bridge_sus = hyper_teleop.bridge_sus:main
+teleop_node = hyper_teleop.teleop_node:main
+
